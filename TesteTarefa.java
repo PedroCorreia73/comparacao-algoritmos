@@ -23,7 +23,7 @@ public class TesteTarefa {
                     @Override
                     public void run() {
                         NossoVetor v = new NossoVetor(tamanhoDoVetor);
-                        v.preencheVetor();
+                        v.copiaVetor(vetorBuscas);
                         long contadores = v.bubbleSort();
                         File arquivo = new File(
                             "bubblesort/" + tamanhoDoVetor + ".txt"
@@ -46,7 +46,7 @@ public class TesteTarefa {
                     @Override
                     public void run() {
                         NossoVetor v = new NossoVetor(tamanhoDoVetor);
-                        v.preencheVetor();
+                        v.copiaVetor(vetorBuscas);
                         long contadores = v.insertionSort();
                         File arquivo = new File(
                             "insertionsort/" + tamanhoDoVetor + ".txt"
@@ -69,7 +69,7 @@ public class TesteTarefa {
                     @Override
                     public void run() {
                         NossoVetor v = new NossoVetor(tamanhoDoVetor);
-                        v.preencheVetor();
+                        v.copiaVetor(vetorBuscas);
                         long contadores = v.selectionSort();
                         File arquivo = new File(
                             "selectionsort/" + tamanhoDoVetor + ".txt"
